@@ -24,9 +24,9 @@ export default function App () {
     FilmleriAl();
   }, []);
 
-  const KaydedilenlerListesineEkle = id => {
-    if (!saved.includes(id)) {
-      saved.push(id);
+  const KaydedilenlerListesineEkle = movie => {
+    if (!saved.includes(movie)) {
+      saved.push(movie);
       setSaved([...saved]);
     }
   };
